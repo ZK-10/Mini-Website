@@ -1,0 +1,97 @@
+/* Products Page - Clean Green Grid Layout */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #436981, #e2ebf0);
+    color: #09182e;
+}
+
+header {
+    background-color: #09182e;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #09182e;
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #09182e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+.picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.picture-grid img {
+    width: 100%;
+    height: 250px; /* ✅ fix same height */
+    object-fit: cover; /* ✅ crop/fit image */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.picture-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.picture-item {
+    text-align: center;
+}
+
+.pic-name {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #09182e;
+    font-size: 1.05em;
+}
